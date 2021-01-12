@@ -1,0 +1,29 @@
+{
+    "mailer":
+        {
+            "host":"smtp.gmail.com",
+            "port":465,
+            "user":"email@gmail.com",
+            "pass":"password",
+            "smtpSecure":"ssl",
+            "smtpAuth":"true",
+            "smtpDebug":0
+        },
+    "admin":
+        {
+            "adminName":"Admin Name",
+            "adminEmail":"admin@email.com",
+            "adminReplyEmail":"replyToEmail@gmail.com",
+            "adminReplyTo":"CONTACTO DESDE LA WEB"
+        },
+    "db":
+        {
+            "dbEngine":"mysql",
+            "host":"localhost",
+            "port":"3306",
+            "dbUser":"root",
+            "dbPass":"",
+            "dbName":"glapsi",
+            "single":true
+        }
+}

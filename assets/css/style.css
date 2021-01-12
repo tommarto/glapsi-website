@@ -1,0 +1,88 @@
+html{scroll-behavior:smooth}
+@font-face{font-family:Akkurat;src:url(../fonts/Akkurat.otf);font-weight:400}
+@font-face{font-family:Chalet;src:url(../fonts/ChaletNewYorkNineteenEighty.ttf);font-weight:700}
+h1,h2,h3{font-family:Chalet,sans-serif;font-weight:700}
+body{font-family:'Montserrat',sans-serif}
+header .text-bordo{font-size:1.2em;line-height:1.2em}
+.bg-light{background-color:#f8f8f8!important}
+.row-eq-height{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex}
+.navbar-light .navbar-nav .nav-link{color:#45145b}
+.navbar-light .navbar-nav .nav-link:hover{color:#90bd21}
+.btn-outline-dark{color:#45145b;border-color:#45145b}
+.btn-outline-dark:hover{color:#fff;background:#45145b}
+li.nav-item.active,li.nav-link.active{font-weight:700}
+.jumbotron{background:#45145b;padding:2em 1em;color:#fff;border-radius:0;margin-bottom:0;overflow:hidden;position:relative}
+.jumbotron h1{margin-bottom:.3em;line-height:1.1em}
+canvas{display:block;vertical-align:bottom}
+#jumbo *{position:relative;z-index:2}
+#particles-js{position:absolute;top:0;left:0;width:100%;height:100%;z-index:1;opacity:.5}
+header .reduce{transform:scale(0.5);margin-left:-50px}
+.logo{margin-top:1rem!important;margin-bottom:.5rem!important}
+.h3,h3{font-size:1.2rem}
+.violet{color:#45145b}
+.green{color:#90bd21}
+.valign-text-bottom{vertical-align:text-bottom}
+.bg-gray{background:#ece9e8}
+.btn-primary{background-color:#E71919;color:#fff;border:none}
+.btn-primary:hover{background:#de0909}
+.btn-light{background:#f8f8f8;color:#45145b}
+.btn-light:hover{background:#90bd21;color:#fff;border-color:#90bd21}
+ul.check{list-style-position:outside;list-style-type:none;padding:0;margin-left:0}
+ul.check li{background-image:url(../images/check.svg);background-repeat:no-repeat;background-position:5px 5px;padding-left:2em;padding-top:3px;padding-bottom:0;margin-bottom:.5em;line-height:1.4rem;min-height:27px;font-size:1.1rem;font-weight:300}
+section{padding:98px 0 30px;overflow:hidden}
+p{font-weight:300;font-size:1.125em}
+.card{border:none;margin-bottom:2em}
+.card p{font-weight:300;letter-spacing:-.3px}
+.card p:last-of-type{font-weight:600}
+#servicios .card-title{color:#45145b;font-size:1.6em}
+#packs .card{-webkit-border-radius:50px;-webkit-border-bottom-left-radius:0;-moz-border-radius:50px;-moz-border-radius-bottomleft:0;border-radius:50px;border-bottom-left-radius:0;margin-bottom:20px;border:1px solid #f5f5f5}
+#packs .card p:last-of-type{margin-bottom:40px}
+.bg-diagonal{background:#90bd21;height:150px;overflow:hidden;position:relative;width:100%;margin-top:-124px;z-index:-1}
+.bg-diagonal::before{background:#fff;bottom:100%;content:'';display:block;height:100%;position:absolute;right:0;transform-origin:99% 100%;transform:rotate(-3deg);width:150%}
+.social p{font-size:1.1em;font-weight:500}
+.social p img{margin-right:10px}
+.shadow-lg{box-shadow:0 1rem 3rem rgba(0,0,0,0.05)!important}
+.description{font-weight:500}
+footer{background:#f8f8f8}
+#contactForm{-webkit-box-shadow:0 0 13px -1px rgba(0,0,0,0.1);box-shadow:0 0 13px -1px rgba(0,0,0,0.1)}
+#contactForm label{line-height:1.2rem}
+#contactForm button{background:#45145b;color:#fff;font-size:1rem;font-weight:300;letter-spacing:.5px}
+#contactForm button:hover{background:#330547;color:#fff}
+#gracias .jumbotron{height:calc(100vh - 170px)}
+section#gracias{padding-bottom:0}
+iframe{width:100%;height:100%;border:0}
+.mapouter{position:relative;text-align:right;height:305px;width:100%}
+.gmap_canvas{overflow:hidden;background:none!important;height:305px;width:100%}
+.whatsapp{position:fixed;right:15px;bottom:15px;cursor:pointer;z-index:999;border-radius:50px}
+@media (min-width: 320px) and (max-width: 375px) {
+nav.navbar.navbar-expand-lg strong{font-size:.8em}
+ol,ul{padding-inline-start:20px}
+#gracias .jumbotron h1{font-size:2.3em}
+}
+@media (min-width: 576px) and (max-width: 767px) {
+.jumbotron img{transform:scale(0.9)}
+}
+@media (max-width: 768px) {
+#form-submit{width:100%}
+}
+@media (min-width: 768px) {
+#form-submit{width:250px}
+}
+@media (min-width: 992px) {
+nav.navbar{padding:0!important}
+.icons img{transform:scale(2)}
+.card-body{padding:1.6rem}
+}
+@media (min-width: 1024px) {
+.jumbotron h1{font-size:5em;font-weight:600;letter-spacing:-1px}
+.jumbotron p{font-size:1.6em}
+#packs{background:url(../images/gotas.png) no-repeat;background-position:bottom}
+}
+@media (min-width: 1200px) {
+.jumbotron{padding-bottom:0}
+.jumbotron h1{font-size:6em;font-weight:600;letter-spacing:-1px;margin-bottom:25px}
+.jumbotron p{font-size:2em}
+.social p{font-size:1.5em}
+h2{font-size:3rem}
+h3{font-size:1.6rem}
+}

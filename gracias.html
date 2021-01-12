@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="es">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<meta name="author" content="organics.digital">
+		<title>Glapsi | Recibimos tu consulta</title>
+		<meta name="description" content="Marketing Digital">
+		<link rel="icon" href="favicon.png"/> 
+		<link href="assets/boostrap/bootstrap.min.css" rel="stylesheet">
+		<link href="assets/css/style.css" rel="stylesheet">
+		<link href="assets/css/animate.min.css" rel="stylesheet">
+		<script src="assets/js/jquery.min.js"></script>
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;500;600&display=swap" rel="stylesheet">
+		<!--[if gte IE 9]
+			<style type="text/css">
+			.gradient {
+			filter: none;
+			}
+			</style>
+		<![endif]-->
+		
+	</head>
+	<body>
+		<header class="bg-white fixed-top">
+			<nav class="navbar navbar-expand-lg navbar-light bg-light">
+				<div class="container">
+					<div id="logo" class="logo">
+						<a href="index.php"><img src="assets/images/logo-glapsi.svg" width="209" height="74" alt="Glapsi"></a>
+					</div>
+					<button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+						<span class="navbar-toggler-icon"></span>
+					</button>
+					<div class="navbar-collapse collapse" id="navbarCollapse">
+						<ul class="navbar-nav ml-auto">
+							<li class="nav-item text-center mr-md-5">
+								<a class="nav-link" href="index.php#quienes-somos">Quiénes somos</a>
+							</li>
+							<li class="nav-item text-center mr-md-5">
+								<a class="nav-link" href="index.php#servicios">Nuestros Servicios</a>
+							</li>
+							
+							<li class="nav-item text-center mr-md-5">
+								<a class="nav-link" href="index.php#plan-marketing">Plan de Marketing</a>
+							</li>
+							<li class="nav-item text-center mr-md-5">
+								<a class="nav-link" href="index.php#packs">Packs</a>
+							</li>
+							<li class="nav-item text-center">
+								<a class="btn btn-outline-dark mr-lg-3 btn-block" href="index.php#contacto">Contacto</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+		</header>
+		<main>
+			<section id="gracias">
+				<div class="jumbotron">
+					<div id="particles-js"></div>
+					<div class="container d-flex h-100" id="jumbo">
+						<div class="row align-self-center w-100">
+							<div class="col-md-4 order-md-12 order-lg-12 text-center">
+								<img src="assets/images/icon-send.svg" width="290" height="290" alt="" class="img-fluid text-center text-md-left mb-4">
+							</div>
+							<div class="col-md-8 align-self-center order-md-1 order-lg-1 text-center text-md-left">
+								<h1>Recibimos <span class="d-lg-block">tu consulta!</span></h1>
+								<p>Te contactaremos a la brevedad</p>
+								<a href="index.php" class="btn btn-light mr-lg-3 btn-lg">&lt; Regresar</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+		<footer>
+			<div class="container">
+				<div class="row">
+					<div class="col-12 pt-4 pb-4">
+							© Glapsi Digital
+					</div>
+				</div>
+			</div>
+		</footer>
+		<script src="assets/boostrap/bootstrap.bundle.js"></script>
+		<script src="assets/js/wow.min.js"></script>
+		<script>
+				new WOW().init();
+		</script>
+			<!--particles -->
+			<script src="assets/particles/js/particles.min.js"></script>
+			<script src="assets/particles/js/app.js"></script>
+			
+			<!--particles -->
+			<script>
+				/*close menu */
+				$(function(){ 
+					var navMain = $(".navbar-collapse");
+					navMain.on("click", "a:not([data-toggle])", null, function () {
+						navMain.collapse('hide');
+					});
+				});
+				/*scroll change header logo */
+				$(function(){
+					$(window).scroll(function(){
+						if ($(this).scrollTop()>5){
+							$('#logo img').addClass('reduce');
+							$('header').addClass('shadow-sm');
+							
+							$('#logo').removeClass('logo');
+							} else {
+							$('#logo img').removeClass('reduce');
+							$('header').removeClass('shadow-sm');
+							$('#logo').addClass('logo');
+						}
+					})
+				});
+				
+				
+				$('a[href*="#"]')
+				// Remove links that don't actually link to anything
+				.not('[href="#"]')
+				.not('[href="#0"]')
+				.click(function(event) {
+					// On-page links
+					if (
+					location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') 
+					&& 
+					location.hostname == this.hostname
+					) {
+						// Figure out element to scroll to
+						var target = $(this.hash);
+						target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+						// Does a scroll target exist?
+						if (target.length) {
+							// Only prevent default if animation is actually gonna happen
+							event.preventDefault();
+							$('html, body').animate({
+								scrollTop: target.offset().top
+								}, 1000, function() {
+								// Callback after animation
+								// Must change focus!
+								var $target = $(target);
+								$target.focus();
+								if ($target.is(":focus")) { // Checking if the target was focused
+									return false;
+									} else {
+									$target.attr('tabindex','-1'); // Adding tabindex for elements not focusable
+									$target.focus(); // Set focus again
+								};
+							});
+						}
+					}
+				});
+			</script> 
+		</body>
+	</html>							
